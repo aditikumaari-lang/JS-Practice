@@ -1,0 +1,28 @@
+ ___(Open the VS Code terminal)
+|
+|__index.js (write the code)
+|
+|___Terminal Command 
+      |
+      |___node index.js (Code ko Run karane ke liye)
+      |
+      |___Code ko git mein track karane ke liye VS Code mein Terminal ke Command
+               |
+               |___ git init
+               |
+               |___ git add index.js (file ko save karne ke liye)
+               |
+               |___ git add . (Sare file ko add karne ke liye)
+               |
+               |___ git commit -m "Message"
+               |
+               |___ git status (Ye batata hai ki kon-si files badli hai, kon-si stage mein hai, kon-si untracked hai.)
+               |
+               |___ git log (Ye sare commits ki history dikhati hai)
+               |
+               |___git diff (Ye last commit ke baad kya badla hai, vo dikhta hai.)
+               |
+               |___
+
+
+
