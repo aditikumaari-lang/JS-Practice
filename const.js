@@ -24,10 +24,10 @@ person.age = 26;      // property change
 person.city = "Delhi"; // new property ad 
 
 console.log(person);
+//  OUTPUR :-- name: 'Aditi', 
+//             age: 26, 
+//             city: 'Delhi' 
 
-//(node const.js) write the terminal
-
-//{ name: 'Aditi', age: 26, city: 'Delhi' }
 
 //Q3. Try to add a new key to the const object in problem 3 were you able to do it?
    const person = {
@@ -39,7 +39,7 @@ console.log(person);
 person.city = "Delhi";
 
 console.log(person);
-//Output { name: 'Aditi', age: 25, city: 'Delhi' }
+// OUTPUT :-- name: 'Aditi', age: 25, city: 'Delhi' 
 //Answer :-- Yes, hum const object mein new key add kar sakte hain.
 
 
@@ -70,8 +70,8 @@ console.log("Meaning of book:", dictionary.book);
   } else {
   console.log("Age is NOT between 10 and 20");
 }
-
 //  OUTPUT :-- Age is between 10 and 20
+
 
 // Q2. Demonstrate the use of switch case statements in JavaScript
 let num1 = 20;
