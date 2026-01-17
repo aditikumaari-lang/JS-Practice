@@ -58,3 +58,69 @@ console.log(dictionary);
 // Print individual meanings
 console.log("Meaning of apple:", dictionary.apple);
 console.log("Meaning of book:", dictionary.book);
+
+                        //Chapter 2.... Practice 2
+
+// Q1. Use logical operator to find whether the age of a person lies between 10 and 20?
+   let age = 15; 
+
+   if (age >= 10 && age <= 20) { // (age >= 10) age 10 se zyada ya barabar hai? or (age >=20) age 20 se kam ya barabar hai?  && means dono condition true hone chahiye
+    console.log("Age is between 10 and 20");
+  } else {
+  console.log("Age is NOT between 10 and 20");
+}
+
+//  OUTPUT :-- Age is between 10 and 20
+
+// Q2. Demonstrate the use of switch case statements in JavaScript
+let num1 = 20;
+let num2 = 4;
+let operator = "+";
+
+switch (operator) { // operator ki value check hogi  
+  case "+":
+    console.log(num1 + num2);
+    break; // ye switch statement ko yahi pe stop kar dega or agar break na ho to program next case ko bhi chala deta hai, jise fall-through bolte hai
+  case "-":
+    console.log(num1 - num2);
+    break;
+  case "*":
+    console.log(num1 * num2);
+    break;
+  case "/":
+    console.log(num1 / num2);
+    break;
+  default:
+    console.log("Invalid operator"); // Agar operator inmein se koi bhi na ho to, to "invalid operator" print hoga
+}
+
+// OUTPUT :-- 24
+
+
+// Q3. Write a JavaScript program to find whether a number is divisible by 2 and 3?
+ let number = 12;
+ if (number % 2 === 0 && number % 3 === 0) {
+  console.log("Number is divisible by both 2 and 3");
+  } else {
+  console.log("Number is NOT divisible by both 2 and 3");
+ }
+ //OUTPUT :-- Number is divisible by both 2 and 3
+
+
+// Q 4. Write a JavaScript program to find whether a number is divisible by either 2 and 3?
+let number = 9;
+
+if (number % 2 === 0 || number % 3 === 0) {
+  console.log("Number is divisible by either 2 or 3");
+} else {
+  console.log("Number is NOT divisible by 2 or 3");
+}
+// OUTPUT :-- Number is divisible by either 2 or 3
+
+
+// Q 5. Print "You Can Drive" or "You Cannot Drive" based on age being greater than 18 using ternary operator.
+ let age = 21;
+
+ let result = age > 18 ? "You Can Drive" : "You Cannot Drive"; // (age > 18)Condition hai// (?)Ternary operate ka use kiya hai
+ console.log(result);
+ //OUTPUT:-- You Can Drive
