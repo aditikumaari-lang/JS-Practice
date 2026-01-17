@@ -1,3 +1,4 @@
+                         //Chapter 1...Practice 1
 //Q1.Create a vaiable of type string and try to add a numbers to it
   let str = "Hello ";
   let num = 10;
