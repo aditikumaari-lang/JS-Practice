@@ -176,3 +176,72 @@ function findMean(a, b, c, d, e) {
 
 console.log(findMean(10, 20, 30, 40, 50)); 
 // OUTPUT :-- 30
+
+// Q4. Get user to input a number using prompt ("Enter a number:"). Check if the number is a multiple 5 or not.
+let num = prompt("Enter a number:");
+num = Number(num);
+
+if (num % 5 === 0) {
+  console.log(num + " is a multiple of 5");
+} else {
+  console.log(num + " is NOT a multiple of 5");
+}
+
+//
+if(age < 18) {
+    console.log("junior");
+} else if (age > 60) {
+    console.log("senior");
+}else {
+    console.log("midle");
+}
+
+
+ // Q5. Print all even numbers from 0 to 100. in js loop 
+  for (let i = 0; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+
+// Q6. Print all odd numbers from 0 to 100. in js loop 
+for (let i = 0; i <= 100; i++) {
+   if (i % 2 !== 0) {
+     console.log(i);
+   }
+}
+
+
+
+// Q7: Create a function that prints numbers from 1 to 10.
+function printNumbers() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+}
+
+printNumbers();
+
+
+// Q4: Create a function that takes a student's marks and returns their grade (A, B, C, F).
+function getGrade(marks) {
+  if (marks >= 80 && marks <= 100) {
+    return "A";
+  } else if (marks >= 70 && marks <= 79) {
+    return "B";
+  } else if (marks >= 60 && marks <= 69) {
+    return "C";
+  } else if (marks >= 0 && marks < 60) {
+    return "F";
+  } else {
+    return "Invalid marks";
+  }
+}
+
+// Example usage:
+console.log(getGrade(85)); // A
+console.log(getGrade(72)); // B
+console.log(getGrade(65)); // C
+console.log(getGrade(45)); // F
+
