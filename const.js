@@ -125,3 +125,54 @@ if (number % 2 === 0 || number % 3 === 0) {
  let result = age > 18 ? "You Can Drive" : "You Cannot Drive"; // (age > 18)Condition hai// (?)Ternary operate ka use kiya hai
  console.log(result);
  //OUTPUT:-- You Can Drive
+
+
+                      /* CHAPTER 3... Practice Set 3 */
+
+// Q1. Write a program to print the marks a student in an object using for loop.
+// Write a program to print the marks a student in an object using for-in loop
+const student = {
+  name: "Aditi",
+  math: 85,
+  science: 78,
+  english: 90,
+  computer: 88
+};
+
+for (let subject in student) {
+  if (subject !== "name") {
+    console.log(subject + ": " + student[subject]);
+  }
+}
+/* OUTPUT :-- math: 85
+science: 78
+english: 90
+computer: 88 */
+
+
+// Q2. Write a program to print " Try Again" until the uses enters the correct number.
+let correctNumber = 7; // jo number correct hai
+let userNumber;
+
+while (userNumber !== correctNumber) {
+  userNumber = Number(prompt("Enter the correct number:"));
+
+  if (userNumber !== correctNumber) {
+    console.log("Try Again");
+  }
+}
+
+console.log("Correct! You guessed the right number.");
+/* OUTPUT :-- Enter the correct number:8
+              Try Again
+              Enter the correct number:7
+              Correct! You guessed the right number. */
+
+              
+// Q3. Write a function to find mean of 5 number.
+function findMean(a, b, c, d, e) {
+  return (a + b + c + d + e) / 5;
+}
+
+console.log(findMean(10, 20, 30, 40, 50)); 
+// OUTPUT :-- 30
